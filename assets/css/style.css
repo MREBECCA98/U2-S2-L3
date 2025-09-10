@@ -10,8 +10,9 @@
 }
 
 .container {
-  max-width: 1000px;
   margin-inline: auto;
+  display: flex;
+  gap: 50px;
 }
 
 .navbar {
@@ -32,9 +33,14 @@
 }
 .nav-list li {
   font-size: 24px;
+  border-radius: 5px;
+  text-align: center;
+  height: 30px;
+  background-color: #cf649a;
 }
 .nav-list li a {
   text-decoration: none;
+  color: #f4f4f4;
 }
 
 .hero {

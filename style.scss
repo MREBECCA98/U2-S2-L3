@@ -7,8 +7,9 @@
 @import "./parziali/animazioni";
 
 .container {
-  max-width: 1000px;
   margin-inline: auto;
+  display: flex;
+  gap: 50px;
 }
 
 .navbar {
@@ -27,8 +28,13 @@
   gap: 1.5rem;
   li {
     font-size: $font-md;
+    border-radius: 5px;
+    text-align: center;
+    height: 30px;
+    background-color: #cf649a;
     a {
       text-decoration: none;
+      color: $testo;
     }
   }
 }
