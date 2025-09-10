@@ -1,0 +1,10 @@
+.buttons {
+  height: 35px;
+  margin: 5px;
+  border: none;
+  color: $testo;
+  transition: transform 0.2s;
+  &:hover {
+    transform: scale(1.1);
+  }
+}

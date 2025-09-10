@@ -1,0 +1,74 @@
+@import "./parziali/reset";
+@import "./parziali/colori";
+@import "./parziali/font";
+@import "./parziali/spaziature";
+@import "./parziali/bottoni";
+@import "./parziali/mixins";
+@import "./parziali/animazioni";
+
+.container {
+  max-width: 1000px;
+  margin-inline: auto;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: $bg_navbar;
+  color: $testo;
+  .logo {
+    width: 150px;
+  }
+}
+.nav-list {
+  display: flex;
+  gap: 1.5rem;
+  li {
+    font-size: $font-md;
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+.hero {
+  font-family: $font;
+  background-color: $bg_hero;
+  color: $testo;
+  display: flex;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  height: 340px;
+  width: 100%;
+  .texthero {
+    margin: auto;
+    text-align: center;
+    h1 {
+      font-size: $font-xl;
+    }
+    p {
+      font-size: $font-md;
+    }
+    .btn1 {
+      @extend .buttons;
+      background-color: $btn1;
+    }
+    .btn2 {
+      @extend .buttons;
+      background-color: $btn2;
+    }
+    .btn3 {
+      @extend .buttons;
+      background-color: $btn3;
+    }
+  }
+  .imgHero {
+    display: flex;
+    img {
+      width: 100%;
+      margin-inline: auto;
+    }
+  }
+}
